@@ -1,0 +1,415 @@
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    /* display: flex; */
+}
+.containall{
+    padding: 2px;
+}
+main{
+    width: auto;
+    height: auto;
+    padding: 1px;
+}
+
+#logo {
+    height: 178px;
+    width: 358px;
+}
+
+#heading {
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: auto;
+    display: flex;
+}
+
+body {
+    background-color: #050d21;
+}
+
+nav {
+    width: 100vw;
+    margin: auto;
+}
+.container{
+    margin: auto;
+    padding: 1px;
+}
+
+ul {
+    padding: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    height: 85px;
+    width: 120px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+li>span {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+li>span:nth-child(1) {
+    color: #1abc9c;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 32px;
+}
+
+li>span:nth-child(2) {
+    color: whitesmoke;
+}
+
+/* a:hover{
+    background-color:grey;
+} */
+li:hover span {
+    transform: translateY(-100%);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+img {
+    width: 200px;
+    height: 108px;
+    display: block;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat";
+}
+
+section {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.left {
+    width: 50%;
+    height: 600px;
+    background-image: url(images/test.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.right {
+    width: 50%;
+    min-height: 400px;
+    background-color: #303137;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+
+.right h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.right p {
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.right a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .left {
+        width: 100%;
+        height: 400px;
+    }
+
+    .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+    }
+}
+
+#end {
+    display: flex;
+    text-align: left;
+    height: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 70%;
+}
+
+footer {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    background-color: #050d21;
+}
+
+footer p {
+    font-size: 1.2em;
+    text-align: left;
+    color: white;
+    padding: 0 1em;
+}
+
+/* p{
+    display: flex;
+    font-size: small ;
+    align-items: center;
+    color: #f3f8f7;
+} */
+#copyright {
+    height: 100%;
+    width: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    font-size: small;
+    color: #f3f8f7;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#copyright a {
+    font-size: small;
+}
+
+.new {
+    font-size: x-large;
+    color: aliceblue;
+}
+
+.intro {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introAbout {
+    width: 80%;
+    height: 1000px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/text2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.text-container {
+    padding: auto;
+    text-align: center;
+    padding: 10%;
+    margin-top: 37%;
+
+}
+
+section {
+    height: 1000px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 199px;
+    margin: auto;
+}
+
+.column1 {
+    flex: 25%;
+    max-width: 250%;
+    padding: 0px;
+    margin: auto;
+}
+
+.column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.row1 img {
+    height: 350px;
+    width: 200px;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 181px;
+    margin: auto;
+}
+
+.column2 {
+    flex: 25%;
+    max-width: 250%;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.row2 img {
+    height: 350px;
+    width: 560px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1 1 300px;
+}
+
+/* Avoid this */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Use this instead */
+.header {
+    position: relative;
+    width: 100%;
+}
