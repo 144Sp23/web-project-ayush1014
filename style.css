@@ -6,7 +6,7 @@ footer,
 h1,
 div,
 img {
-    margin: 0;
+    margin: auto;
     padding: 0;
     border: 0;
 }
@@ -304,7 +304,7 @@ section {
 .row1 {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 199px;
+    padding: 35 35px;
     margin: auto;
 }
 
@@ -336,7 +336,7 @@ section {
 .column2 {
     flex: 25%;
     max-width: 250%;
-    padding: 0 20px;
+    padding: 0 35px;
     margin: auto;
 }
 
