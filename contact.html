@@ -71,12 +71,13 @@
                     <option value="australia">Australia</option>
                     <option value="canada">Canada</option>
                     <option value="usa">USA</option>
+                    
                   </select>
               
                   <label for="subject">Subject</label>
                   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              
-                  <input type="submit" value="Submit">
+                  <button  id="submit" class="submit" onclick="submit()">Submit</button>
+                  <!-- <input id="submit" type="submit" value="Submit"> -->
               
                 </form>
             </div>
@@ -99,6 +100,11 @@
         <p>&copy; Copyright 2023. All Rights Reserved<br>
         <a href="mailto:ayushkanaujia14@gmail.com">ayushkanaujia14@gmail.com</a></p>
     </div>
-    
+    <script>
+        function submit(){
+            console.log('Successfully Submitted')
+            }
+    </script>
 </body>
+
 </html>
